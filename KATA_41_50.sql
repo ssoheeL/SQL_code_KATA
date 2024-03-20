@@ -17,7 +17,7 @@ where car_type ='SUV';
 
 
 #코드카타 43번
-# 완료된 중고 거래의 총 금액이 70만우너 이상인 사람의 id,닉네임, 총거래 금액 조회
+# 완료된 중고 거래의 총 금액이 70만원 이상인 사람의 id,닉네임, 총거래 금액 조회
 
 SELECT users.user_id, users.nickname,sum(board.price) total_price
 from used_goods_board as board join used_goods_user as users on board.writer_id = users.user_id
